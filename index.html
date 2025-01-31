@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Management</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header>
+        <h1>Supply Chain Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#add-product">Add Product</a></li>
+                <li><a href="#view-products">View Products</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to the Supply Chain Management System</h2>
+            <p>Manage and track products through the supply chain using blockchain technology.</p>
+        </section>
+
+        <section id="add-product">
+            <h2>Add a Product</h2>
+            <form id="product-form">
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" name="product-name" required><br>
+
+                <label for="product-description">Description:</label>
+                <textarea id="product-description" name="product-description" required></textarea><br>
+
+                <label for="product-barcode">Barcode:</label>
+                <input type="text" id="product-barcode" name="product-barcode" required><br>
+
+                <button type="submit">Add Product</button>
+            </form>
+        </section>
+
+        <section id="view-products">
+            <h2>Products in the System</h2>
+            <ul id="product-list">
+                <!-- List of products will be dynamically added here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Supply Chain Management System</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
